@@ -32,7 +32,7 @@ Open ApktoolX then go to Settings
 *Install OpenJDK 
 
 See Sreenshot for references
-<img src="https://github.com/MrSluffy/sis-res/Screenshot_20210327-091326_Apktool_X.png?raw=true">
+<img src="https://github.com/MrSluffy/sis-res/blob/A11/Screenshot_20210327-091326_Apktool_X.png?raw=true">
 
 - Now Importing framework in Apktool X
 - Go to system folder -> framework -> framework-res.apk
