@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	<!-- Copyright (C) 2014 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+	
+<LinearLayout android:theme="@style/QSHeaderTheme" android:id="@id/quick_qs_status_icons" android:paddingTop="@dimen/qs_header_top_padding" android:paddingBottom="@dimen/qs_header_bottom_padding" android:focusable="true" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:layout_below="@id/quick_status_bar_system_icons"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+      <!--    
+    res that uses in Substratum Icons Special A11 
+
+  1. abc_slice_icon_size -> dimen 
+     *to hide battery
+
+  2. abc_button_inset_vertical_material -> dimen
+      *to give space from the right side
+
+  3. abc_text_size_caption_material -> dimen
+       *to adjust clock height
+
+-->
+  
+    <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/TextAppearance.QS.Status" android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/date" android:layout_width="0.0dip" android:layout_height="0.0dip" android:singleLine="true" systemui:datePattern="" />
+    <TextClock android:textSize="@dimen/abc_text_size_caption_material" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="@string/system_ui_date_pattern" android:format24Hour="@string/system_ui_date_pattern" />
+    <com.android.systemui.statusbar.phone.StatusIconContainer android:id="@id/statusIcons" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingEnd="@dimen/abc_button_inset_vertical_material" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/abc_slice_icon_size">
+        <com.android.systemui.BatteryMeterView android:gravity="center_horizontal" android:id="@id/batteryRemainingIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="2.0dip" systemui:textAppearance="@style/TextAppearance.QS.Status" />
+    </LinearLayout>
+</LinearLayout>

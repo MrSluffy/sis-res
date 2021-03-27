@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+	        <!--    
+    res that uses in Substratum Icons Special A11 
+-->
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextClock android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingBottom="@dimen/title_clock_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="hh:mm" android:format24Hour="HH:mm" android:elegantTextHeight="false" android:letterSpacing="0.02" style="@style/widget_big" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_status_area" />
+</LinearLayout>

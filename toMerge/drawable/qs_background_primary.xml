@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+          <!--    
+    res that uses in Substratum Icons Special A11 
+-->
+  
+    <item android:left="@dimen/notification_side_paddings" android:top="@dimen/notification_side_paddings" android:right="@dimen/notification_side_paddings">
+        <shape>
+            <solid android:color="@color/lb_error_background_color_translucent" />
+            <corners android:radius="?android:dialogCornerRadius" />
+        </shape>
+    </item>
+</layer-list>

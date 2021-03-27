@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+          <!--    
+    res that uses in Substratum Icons Special A11 
+-->
+  
+    <gradient android:startColor="@color/lb_guidedactions_background_dark" android:endColor="#00000000" android:angle="270.0" android:type="linear" />
+</shape>
