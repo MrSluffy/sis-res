@@ -8,6 +8,7 @@
 
 ## Create your own Module to used S.I.S in your favorite android 11 custom roms 
 - For educational purposes only
+- I'm no responsible for any damage on your device. Do this at on your own risk*
 
 ## Step 0: PRECONFIGURATIONS!
 Install/Used Apktool for PC [here](https://ibotpeaches.github.io/Apktool/)
@@ -18,7 +19,7 @@ vrtheme [XDA](https://forum.xda-developers.com/t/mod-magisk-android-11-addon-fea
 
 `ApkToolX Requirements`
 - Your rom should permissive [here](https://t.me/permissiver/2)
-- BusyBox NDK (Optional)
+- BusyBox NDK (Optional) [repo](https://github.com/Magisk-Modules-Repo/busybox-ndk)
 - Root [Magisk](https://github.com/topjohnwu/Magisk/releases)
 
 
@@ -41,8 +42,11 @@ See Sreenshot for references
 
 ## Decompiling / Recompiling SystemUI
 
-- Make a folder in your sdcard and name it as Mod
+- Make a folder in your sdcard and name it as `Mod`
 - using [root explorer](https://rootexplorer.co/download-apk/) copy your SystemUI.apk in created Mod folder
+```
+/system/system_ext/priv-app/SystemUI
+```
 - Now open Apktool X goto Mod folder
 - Click SystemUI.apk Choose Decompile res
 - Using [TextEditor](https://play.google.com/store/apps/details?id=com.rhmsoft.edit) open sdcard/Mod/SystemUI_src/res/values/styles.xml 
@@ -85,12 +89,11 @@ and Same with
 
 <style name="TextAppearance.NotificationImportanceApp" parent="@style/TextAppearance">
 
-  <style name="TextAppearance.NotificationImportanceChannel" parent="@style/TextAppearance">
+<style name="TextAppearance.NotificationImportanceChannel" parent="@style/TextAppearance">
   
-  <style name="TextAppearance.NotificationImportanceChannelGroup" parent="@style/TextAppearance">
+<style name="TextAppearance.NotificationImportanceChannelGroup" parent="@style/TextAppearance">
 
 Delete the duplicated attribute 
-
 
 ```
 - Now Open Apktool X and tap SystemUI_src and choose Recompile
@@ -110,9 +113,9 @@ You already learn Decompiling and Recompiling SystemUI
 - In your Zarchiever
 - Open SystemUI_src.apk
 - and all the modified res copy and replace it inside the 
-- S.I.SvrTheme[MAGISK].zip/system/system_ext/priv-app/SystemUI/Systemui.apk folder
-- now flash 
-- And Enjoy S.I.S A11 
+- S.I.SvrTheme[MAGISK].zip vrtheme/system/system_ext/priv-app/SystemUI/Systemui.apk/res/HERE folder
+- now install your S.I.SvrTheme[MAGISK].zip in your Magisk
+- And Enjoy [S.I.S A11](https://t.me/sluffy_icons)
 
 
 # [Credits & Thanks](https://telegra.ph/Credits-And-Thank-08-16)
