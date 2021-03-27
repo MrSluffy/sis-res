@@ -113,3 +113,6 @@ You already learn Decompiling and Recompiling SystemUI
 - S.I.SvrTheme[MAGISK].zip/system/system_ext/priv-app/SystemUI/Systemui.apk folder
 - now flash 
 - And Enjoy S.I.S A11 
+
+
+# [Credits & Thanks](https://telegra.ph/Credits-And-Thank-08-16)
