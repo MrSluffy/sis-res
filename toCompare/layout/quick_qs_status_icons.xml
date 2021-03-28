@@ -12,6 +12,8 @@
      limitations under the License.
 -->
 	
+	    	    <!-- Start Compare -->
+	
 <LinearLayout android:theme="@style/QSHeaderTheme" android:id="@id/quick_qs_status_icons" android:paddingTop="@dimen/qs_header_top_padding" android:paddingBottom="@dimen/qs_header_bottom_padding" android:focusable="true" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:layout_below="@id/quick_status_bar_system_icons"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
       <!--    
@@ -35,3 +37,5 @@
         <com.android.systemui.BatteryMeterView android:gravity="center_horizontal" android:id="@id/batteryRemainingIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="2.0dip" systemui:textAppearance="@style/TextAppearance.QS.Status" />
     </LinearLayout>
 </LinearLayout>
+                	    <!-- End Compare -->
+

@@ -10,7 +10,9 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
+--> 
+	
+	    	    <!-- Copy this whole and paste it to yours -->
 	
 <LinearLayout android:theme="@style/QSHeaderTheme" android:orientation="horizontal" android:id="@id/header_text_container" android:paddingTop="@dimen/qs_header_top_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:layout_below="@id/quick_status_bar_system_icons" android:forceHasOverlappingRendering="false"
   xmlns:android="http://schemas.android.com/apk/res/android">

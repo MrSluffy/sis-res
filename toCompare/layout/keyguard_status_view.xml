@@ -28,16 +28,21 @@
   3. abc_action_menu_item_layout
       *S.I.S Lockscreen Clock Layout
 -->
-    	
+    	    <!-- Start Compare -->
     
         <RelativeLayout android:gravity="top" android:layout_gravity="top" android:paddingBottom="@dimen/abc_action_bar_default_padding_start_material" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/abc_switch_padding">
             <include android:id="@+id/lb_search_text_editor" android:layout_alignParentTop="true" layout="@layout/abc_action_menu_item_layout" />
             <TextView android:theme="@style/TextAppearance.Keyguard" android:textSize="23.0sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:layout_gravity="left" android:id="@+id/owner_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/lb_search_text_editor" android:fontFamily="sans-serif-light" android:letterSpacing="0.05" />
         </RelativeLayout>
+        
+            	    <!-- End Compare -->
+        
         <TextView android:textSize="13.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/logout" android:background="@drawable/logout_button_background" android:paddingLeft="@dimen/logout_button_padding_horizontal" android:paddingRight="@dimen/logout_button_padding_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/logout_button_layout_height" android:layout_marginBottom="@dimen/logout_button_margin_bottom" android:text="@android:string/imProtocolCustom" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="@android:string/config_defaultAttentionService" />
         
             <!--    
       Hide Default Clock
+
+  by making 0.0dip in both layout_width and height
 -->
  
         <include android:id="@+id/keyguard_clock_container" android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/keyguard_clock_switch" />

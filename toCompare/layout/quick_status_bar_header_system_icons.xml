@@ -27,12 +27,14 @@
        *S.I.S Header Clock Layout
 
 -->
-  
+        	    <!-- Copy this  and paste it to yours-->
     <LinearLayout android:gravity="@integer/lb_details_description_body_min_lines" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/abc_action_bar_default_padding_end_material">
         <RelativeLayout android:layout_gravity="@integer/lb_details_description_body_min_lines" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/abc_action_menu_layout" />
         </RelativeLayout>
     </LinearLayout>
+        	    <!-- Stop -->
+    
     <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
         <com.android.systemui.statusbar.policy.Clock android:textSize="@dimen/abc_text_size_body_1_material" android:textColor="@android:color/white" android:gravity="start|center" android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="48.0dip" android:singleLine="true" android:paddingStart="@dimen/status_bar_left_clock_starting_padding" android:paddingEnd="@dimen/status_bar_left_clock_end_padding" />
     </LinearLayout>
