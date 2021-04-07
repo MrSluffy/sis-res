@@ -11,20 +11,20 @@
 - I'm no responsible for any damage on your device. Do this at on your own risk*
 
 ## Step 0: PRECONFIGURATIONS!
-Install/Used Apktool for PC [here](https://ibotpeaches.github.io/Apktool/)
+Install/Use Apktool for PC from [here](https://ibotpeaches.github.io/Apktool/)
 
-for mobile `ApkToolX by AndroBlack` [arm7](https://androidfilehost.com/?fid=4349826312261827487) [arm64](https://androidfilehost.com/?fid=4349826312261827488)
-Zarchiever.apk [here](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver)
+for mobile you can use `ApkToolX by AndroBlack` [arm7](https://androidfilehost.com/?fid=4349826312261827487) [arm64](https://androidfilehost.com/?fid=4349826312261827488)
+Zarchiever.apk [here](https://www.apkmirror.com/apk/zdevs/zarchiver/)
 vrtheme [XDA](https://forum.xda-developers.com/t/mod-magisk-android-11-addon-features-for-pixel-devices-pixel-4a-thread.4215069/), [github](https://github.com/ElTifo/CustomSettingsForDevs/tree/Pixel4a/app/src/mods) 
 
 `ApkToolX Requirements`
-- Your rom should permissive [here](https://t.me/permissiver/2)
-- BusyBox NDK (Optional) [repo](https://github.com/Magisk-Modules-Repo/busybox-ndk)
+- Your rom should have an SELinux permissive state, get permissiver from [here](https://t.me/permissiver/2)
+- BusyBox NDK (Optional, sometimes you get "/system/bin/sh not found error without busybox) [repo](https://github.com/Magisk-Modules-Repo/busybox-ndk)
 - Root [Magisk](https://github.com/topjohnwu/Magisk/releases)
 
 
 ##  Installing Apktool X in Mobile
-Install Apktool X like normal application apk
+Install Apktool X like any other APK
 after installing it will ask again to install .Install once again
 
 Open ApktoolX then go to Settings
@@ -35,32 +35,32 @@ Open ApktoolX then go to Settings
 See Sreenshot for references
 <img src="https://github.com/MrSluffy/sis-res/blob/A11/Screenshot_20210327-091326_Apktool_X.png?raw=true">
 
-- Now Importing framework in Apktool X
+- Now Import our framework in Apktool X
 - Go to system folder -> framework -> framework-res.apk
 - click framework-res.apk and choose import as framework
 - done
 
 ## Decompiling / Recompiling SystemUI
 
-- Make a folder in your sdcard and name it as `Mod`
+- Make a folder in your sdcard and name it `Mod`
 - using [root explorer](https://rootexplorer.co/download-apk/) copy your SystemUI.apk in created Mod folder
 ```
 /system/system_ext/priv-app/SystemUI
 ```
-- Now open Apktool X goto Mod folder
-- Click SystemUI.apk Choose Decompile res
-- Using [TextEditor](https://play.google.com/store/apps/details?id=com.rhmsoft.edit) open sdcard/Mod/SystemUI_src/res/values/styles.xml 
+- Now open Apktool X and go to your Mod folder
+- Click SystemUI.apk, and Choose Decompile res
+- Using a [TextEditor](https://play.google.com/store/apps/details?id=com.rhmsoft.edit) open sdcard/Mod/SystemUI_src/res/values/styles.xml 
 
 ```
-Search this styles
+Search these styles
 
 <style name="Keyguard.ImageButton.NumPadDelete" parent="@android:style/Widget.ImageButton">
 
-you will see duplicate attribute which is
+you will see a duplicate attribute which is
 
 <item name="android:src">@drawable/ic_backspace_black_24dp</item>
 
-delete that line
+delete that line (so only 1 instead of 2 lines are left of it)
 
 See for reference
 ==========================================
@@ -101,10 +101,10 @@ Delete the duplicated attribute
 
 ## Create Module to Support S.I.S
 
-You already learn Decompiling and Recompiling SystemUI 
+You have already learned Decompiling and Recompiling SystemUI 
 - Now to create S.I.S Module
 - In my provided files 
-- in `toMerge` folder , Copy layout and drawable folder and paste it to your SystemUI_src/res/HERE
+- in `toMerge` folder , Copy layout and drawable folder and paste it to your SystemUI_src/res/HERE (dont create a folder called here)
 - in `toCompare` Compare S.I.S layout to your SystemUI_src
 ```
 How to properly compare:
@@ -128,10 +128,10 @@ Repeat for all files in the "ToCompare" folder
 ## Replacing
 - In your Zarchiever
 - Open SystemUI_src.apk
-- and all the modified res copy and replace it inside the 
-- S.I.SvrTheme[MAGISK].zip vrtheme/system/system_ext/priv-app/SystemUI/Systemui.apk/res/HERE folder
+- select all the modified res (files you modded) copy and replace the files inside of: 
+- S.I.SvrTheme[MAGISK].zip vrtheme/system/system_ext/priv-app/SystemUI/Systemui.apk/res/HERE
 - now install your S.I.SvrTheme[MAGISK].zip in your Magisk
 - And Enjoy [S.I.S A11](https://t.me/sluffy_icons)
-
+(you can also edit module.prop to change name, ID, and other things about the module)
 
 # [Credits & Thanks](https://telegra.ph/Credits-And-Thank-08-16)
