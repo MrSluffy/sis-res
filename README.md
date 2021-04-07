@@ -105,7 +105,23 @@ You already learn Decompiling and Recompiling SystemUI
 - Now to create S.I.S Module
 - In my provided files 
 - in `toMerge` folder , Copy layout and drawable folder and paste it to your SystemUI_src/res/HERE
-- in `toCompare` Compare S.I.S layout to your SystemUI_src 
+- in `toCompare` Compare S.I.S layout to your SystemUI_src
+```
+How to properly compare:
+open 2 files
+
+file 1: a file from the "ToCompare" folder
+file 2: a file with the same name from your /res/layout folder
+
+search for "Compare start" in the "ToCompare" file
+check if your file looks the same as the "ToCompare" file
+
+do this until you reach "Compare stop"
+
+
+
+Repeat for all files in the "ToCompare" folder
+ ```
 *Note Compare not Replace!
 - Now Recompile!
 
